@@ -1,38 +1,64 @@
 .App {
-  text-align: center;
+  background-color: #dedede;
+  margin: 8rem auto;
+  padding: 3rem;
+  width: 50vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.grid {
   display: flex;
-  flex-direction: column;
+}
+
+.col {
+  flex: 1 0 0;
+}
+
+.input-group {
+  margin: 1rem 0;
+}
+
+.input {
+  position: relative;
+}
+
+.currency {
+  position: absolute;
+  font-size: 1rem;
+  left: .65rem;
+  top: 0.55rem;
+}
+
+label {
+  display: block;
+  font-size: 0.75rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  font-size: 1rem;
+  padding: .5rem .5rem .5rem 1.5rem;
+}
+
+.total {
+  height: 100%;
+}
+
+.total-value {
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  color: #fff;
+  font-size: 3rem;
+  display: flex;
+  background: linear-gradient(90deg, rgba(144,201,117,1) 35%, rgba(25,140,163,1) 100%);
+  margin: 1.5rem 0 1rem;
+  height: 6.5rem;
+  position: absolute;
+  min-width: 11rem;
 }
